@@ -1,9 +1,9 @@
-function getFormvalue() {
+function getFormvalue(event) {
     //Write your code here
-		  // Prevents the form from reloading the page
+		 event.preventDefault(); // Prevents the form from reloading the page
 
-            let firstName = document.querySelector("fname").value.trim();
-            let lastName = document.querySelector("lname").value.trim();
+            let firstName = document.forms["form1"]["fname"].value.trim();
+            let lastName = document.forms["form1"]["lname"].value.trim();
 
             if (!firstName || !lastName) {
                 alert("Please enter both First Name and Last Name.");
