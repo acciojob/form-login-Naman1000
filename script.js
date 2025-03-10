@@ -1,6 +1,6 @@
-function getFormvalue(event) {
+function getFormvalue() {
     //Write your code here
-		 event.preventDefault(); // Prevents the form from reloading the page
+		  // Prevents the form from reloading the page
 
             let firstName = document.getElementByName("fname").value.trim();
             let lastName = document.getElementByName("lname").value.trim();
